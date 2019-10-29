@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Semlinker's Springboot2 Cors</title>
+</head>
+<body>
+<h3>Semlinker's Springboot2 Cors</h3>
+<div>
+    用户列表：
+    <p id="users"></p>
+</div>
+<script>
+    (function () {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.querySelector("#users").innerHTML = xmlhttp.responseText;
+            }
+        };
+        xmlhttp.open("GET", "http://localhost:8081/users");
+        xmlhttp.send();
+    })();
+</script>
+</body>
+</html>
