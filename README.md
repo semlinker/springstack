@@ -2,8 +2,6 @@
 
 ### 一、Spring Boot 2.x 系列教程
 
-![springboot2.x](resources/springboot2.x.png)
-
 #### 1.1 目录
 
 - [Spring Boot 2.x (一)：第一个 Web 应用 Hello Spring Boot 2](https://semlinker.com/hello-springboot2/)  —— [hello-springboot2](https://github.com/semlinker/springstack/tree/master/hello-springboot2)
